@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>To:Do App</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    </head>
+    <body>
+        <dialog class="container modal-ctn" id="modal">
+            <h3>Registrate</h3>
+            <div>
+                <p>Nombre de Usuario</p>
+                <input class="enter-name" type="text" id="userName" placeholder="Escribe tu nombre">
+            </div>
+            <div class="btn-ctn">
+                <button class="modal-btn-close" id="modalBtnClose">Cerrar</button>
+                <button class="modal-btn" id="signInBtn">Registrar</button>
+            </div>
+        </dialog>
+        <div class="sign-in">
+            <button class="modal-btn" id="modalBtn">Entrar</button>
+        </div>
+        <div class="container">
+            <div class="profile">
+                <div id="date"><!--Miercoles, 14 de Diciembre--></div>
+                <h1 id="user">Hola! </h1>
+                <span>¡Vamos a terminar todas nuestras tareas!</span>
+            </div>
+            <div class="add-task">
+                <input type="text" id="input" placeholder="agregar tarea">
+                <i id="enter" class="bi bi-plus-circle-fill"></i>
+            </div>
+
+            <div class="tasks">
+                <h3>Estas son tus tareas pendientes</h3>
+                <ul id="list">
+                    <!--<li>
+                        <i class="bi bi-circle" data-="finished" id="0"></i>
+                        <p class="text">Hacer los diseños</p>
+                        <i class="bi bi-trash-fill" data-="deleted" id="0"></i>
+                    </li>-->
+                </ul>
+
+            </div>
+        </div>
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>
